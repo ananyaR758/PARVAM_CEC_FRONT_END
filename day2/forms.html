@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+    body{
+        background-color:navajowhite;
+        font-family:fantasy;
+    }
+    form{
+        margin: 200px;
+        padding: 200px;
+        background-color:lightyellow;
+        font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+    }
+    label{
+        color:indianred;
+        background-color:aquamarine;
+        font-family:Arial,Helvetica,serif;
+        font-size:small;
+    }
+    .gfy{
+        border: 2px solid saddlebrown;
+        border-radius: 20px;
+        margin-left: 50px;
+        padding: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>CITY ENGINEERING COLLEGE</header>
+    <nav>
+        <ul>
+            <li><a href="../day2/forms.html" target="_blank">forms</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </nav>
+<h1 style="text-align:center;color:deeppink; background-color:lightsalmon; font-family:Cambria,Cochin,Georgia,times,'times new roman',serif;">basic form</h1>
+<form action="/submit" method="POST">
+    <div class="gfy">
+<label for="name">name:</label>
+<input type="text" id="name" name="name" required/><br><br>
+    </div>
+    <div class="gfy">
+<label for="email">Email:</label>
+<input type="text" id="name" name="name" required/><br><br>
+    </div>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male"><br><br>
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female"><br><br>
+<h3> terms and condition</h3>
+<label>
+<input type="checkbox" name="terms" required>
+    I agree to the terms and condition</label><br><br>
+    <label for="department">department</label>
+    <select id="department" name="department">
+        <option value="ISE">ISE</option>
+         <option value="CSE">CSE</option>
+         <option value="ME">ME</option>
+          <option value="CIV">CIV</option>
+           <option value="AI&ML">AI&ML</option>
+    </select><br><br>
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" required/><br><br>
+    <label for="birthday">birthday:</label>
+    <input type="date" id="birthday" name="birthday" required/><br><br>
+    <textarea>Description</textarea><br><br>
+<label for="video">upload video</label>
+<input type="file" name="video" id="video" accept="video/*"><br><br>
+<label for="pdf">upload pdf</label>
+<input type="file" name="file" id="pdf" accept="application/pdf"><br><br>
+<label for="doc">upload doc</label>
+<input type="file" name="doc" id="doc" accept="application/docx"><br><br>
+<label for="rating">give your rating</label>
+<input type="range" name="range" id="range" min="0" max="100"><br><br>
+<label for="color">select color</label>
+<input type="color" name="color" id="color"/><br><br>
+<label for="password">password:</label>
+    <input type="password" id="password" name="password" required/><br><br>
+    <label for="birthday">birthday:</label>
+    <input type="date" id="birthday" name="birthday" required/><br><br>
+    <textarea>Description</textarea><br><br>
+<label for="video">upload video</label>
+<input type="file" name="video" id="video" accept="video/*"><br><br>
+<label for="pdf">upload pdf</label>
+<input type="file" name="file" id="pdf" accept="application/pdf"><br><br>
+<label for="doc">upload doc</label>
+<input type="file" name="doc" id="doc" accept="application/docx"><br><br>
+<label for="rating">give your rating</label>
+<input type="range" name="range" id="range" min="0" max="100"><br><br>
+<label for="color">select color</label>
+<input type="color" name="color" id="color"/><br><br>
+<input type="submit" value="submit"/><br><br>
+<button type="reset">reset</button>
+</form>
+    
+</body>
+</html>
